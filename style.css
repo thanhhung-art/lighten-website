@@ -44,19 +44,48 @@
 }
 
 .navbar .logo {
-  flex-basis: 26%;
+  flex-basis: 22%;
 }
 
 .container-nav .links {
+  flex-basis: 60%;
+  vertical-align: middle;
+}
+
+.container-nav nav {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  padding: 2rem;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav a {
+  text-decoration:none;
+  color: #000;
+  font-size: 20px;
+}
+
+.header .btn {
+  flex-basis: 18%;
+  position: relative;
+}
+
+.header .btn button {
+  width: 120px;
+  height: 40px;
+  background-color: var(--color-primary);
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+.header .btn-header {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-}
-
-.container-nav a{
-  margin-left: 2rem;
-  font-size: 20px;
-  text-decoration: none;
-  color: #000;
 }
