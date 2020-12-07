@@ -8,6 +8,23 @@
   padding: 0;
 }
 
+.main-title {
+  position: relative;
+  padding: 10px;
+}
+
+.main-title::after {
+  content: "";
+	width: 100px;
+	height: 8px;
+	background-color: #000;
+	z-index: 1;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%)
+}
+
 .header .social-links {
   display: flex;
   justify-content: space-between;
@@ -103,8 +120,8 @@ nav a:hover {
 .text-banner {
   position: absolute;
   top: 50%;
-  left: 27%;
-  transform: translate(-50%,-50%);
+  margin-left: 15vw;
+  transform: translateY(-50%);
 }
 
 .text-banner span {
@@ -121,8 +138,8 @@ nav a:hover {
 }
 
 .text-banner h1 {
-  font-size: 90px;
-  margin: 10px 0;
+  font-size: 5vw;
+  margin: 1rem 0;
 }
 
 .text-banner p {
@@ -164,4 +181,40 @@ nav a:hover {
   background: #fff;
   padding: 18px;
   margin-left: 10px;
+}
+
+.banner-image{
+  width: 100%;
+  height: auto;
+}
+
+/* why choose us */
+
+.why-choose-us {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.why-choose-us .title h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.why-choose-us .title p {
+  font-size: 1.5rem;
+  margin: 30px 0 50px;
+}
+
+.why-choose-us .content {
+  height: 60vh;
+  display: flex;
+}
+
+.content .center {
+  flex-basis: 58%;
+}
+
+.content .right, .content .left {
+  background: var(--color-primary);
+  flex-basis: 21%;
 }
