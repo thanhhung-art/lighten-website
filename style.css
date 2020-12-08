@@ -13,6 +13,8 @@
   position: relative;
   padding: 10px;
   font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
 }
 
 .main-title::after {
@@ -25,6 +27,11 @@
 	bottom: 0;
 	left: 50%;
 	transform: translateX(-50%)
+}
+
+.title p {
+  font-size: 1.5rem;
+  margin: 30px 0 50px;
 }
 
 .header .social-links {
@@ -143,7 +150,7 @@ nav a:hover {
 .text-banner h1 {
   font-size: 5vw;
   margin: 1rem 0;
-  
+
 }
 
 .text-banner p {
@@ -205,10 +212,7 @@ nav a:hover {
   font-weight: 400;
 }
 
-.why-choose-us .title p {
-  font-size: 1.5rem;
-  margin: 30px 0 50px;
-}
+
 
 .why-choose-us .content {
   background : var(--color-primary);
@@ -258,4 +262,32 @@ nav a:hover {
   background: #fff;
   border: 2px solid var(--color-primary);
   font-size: 18px;
+}
+
+/* Service process */
+
+.service-process .title {
+  text-align: center;
+  padding: 2rem;
+}
+
+.service-process .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  grid-gap: 30px;
+}
+
+.service-process .grid .item {
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.service-process .grid .item p {
+  margin: 20px auto 0;
+  max-width: 250px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.5;
 }
