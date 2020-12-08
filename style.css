@@ -6,11 +6,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 .main-title {
   position: relative;
   padding: 10px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .main-title::after {
@@ -122,6 +124,7 @@ nav a:hover {
   top: 50%;
   margin-left: 15vw;
   transform: translateY(-50%);
+  font-family: 'Roboto', sans-serif;
 }
 
 .text-banner span {
@@ -140,18 +143,20 @@ nav a:hover {
 .text-banner h1 {
   font-size: 5vw;
   margin: 1rem 0;
+  
 }
 
 .text-banner p {
   margin: 10px 0;
   max-width: 450px;
   font-weight: 600;
+  font-size: 15px;
 }
 
 .text-banner button {
   margin: 10px 0;
-  width: 250px;
-  height: 50px;
+  width: 15vw;
+  height: 6vh;
   background-color: var(--color-primary);
   border:none;
   font-size: 16px;
@@ -197,7 +202,7 @@ nav a:hover {
 
 .why-choose-us .title h1 {
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .why-choose-us .title p {
@@ -206,15 +211,51 @@ nav a:hover {
 }
 
 .why-choose-us .content {
-  height: 60vh;
+  background : var(--color-primary);
+}
+
+.content .container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1100px;
+  background: #fff;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content .flex {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.content .center {
-  flex-basis: 58%;
+.content img {
+  margin-top: 2rem;
 }
 
-.content .right, .content .left {
-  background: var(--color-primary);
-  flex-basis: 21%;
+.content h2 {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.content .text {
+  margin-top: 20px;
+  max-width: 250px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.content .btn {
+  padding: 2rem;
+}
+
+.content .btn button {
+  width: 150px;
+  height: 50px;
+  background: #fff;
+  border: 2px solid var(--color-primary);
+  font-size: 18px;
 }
