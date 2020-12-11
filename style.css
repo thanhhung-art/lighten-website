@@ -295,6 +295,7 @@ nav a:hover {
 /* Our product */
 
 .our-product {
+  position: relative;
 }
 
 .our-product .title {
@@ -316,8 +317,11 @@ nav a:hover {
   margin: 25px 0 30px;
 }
 
-.bg-white {
-  opacity: 0.4;
+.our-product .content {
+  background-image: url("images/bg.jpg");
+  background-repeat: no;
+  background-position: center;
+  background-size: cover;
   width: 100%;
   height: auto;
 }
