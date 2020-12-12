@@ -233,7 +233,7 @@ nav a:hover {
   justify-content: space-around;
 }
 
-.content img {
+.why-choose-us .content img {
   margin-top: 2rem;
 }
 
@@ -328,7 +328,7 @@ nav a:hover {
 }
 
 .our-product .content .wrap {
-  
+
   position: absolute;
   top: 0;
   width: 100%;
@@ -348,6 +348,7 @@ nav a:hover {
   grid-gap: 20px;
   height: 40%;
   background-color: transparent;
+  box-shadow:none;
 }
 
 .our-product .content .grid .item {
@@ -380,6 +381,7 @@ nav a:hover {
 
 .our-product .row-2 .container {
   background-color: transparent;
+  box-shadow: none;
 }
 
 .our-product .row-2 .container h1{
@@ -388,7 +390,23 @@ nav a:hover {
 }
 
 .row-2 .user {
-  margin: 2rem 0;
-  display: flex;
-  vertical-align: middle;
+  margin: 4rem 0 3rem;
+  display: inline-block;
+}
+
+
+.row-2 .user span {
+  float: right;
+  padding: 3rem;
+}
+
+.row-2 .user span h3 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.row-2 .user-say {
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgba(0,0,0,0.8);
 }
